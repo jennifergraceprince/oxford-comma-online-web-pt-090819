@@ -1,14 +1,12 @@
-array = ["apple"]
-def oxford_comma(array)
-  if array.length == 2
-  array[-2] << " and "
-  array.join
-  elsif array.length == 1
-  	array.join
-  elsif array.length > 2
-    array[-1].prepend "and "
-	array.join(", ")
+feelings = ["hungry, tired"]
+def oxford_comma(feelings)
+  if feelings.length == 2
+  feelings[-2] << " and "
+  feelings.join
+  elsif feelings.length == 1
+  	feelings.join
+  elsif feelings.length > 2
+    feelings[-1].prepend "and "
+	feelings.join(", ")
   end
 end
-
-oxford_comma(array)
